@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,42 +35,65 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              class="hidden absolute dark:bg-dark lg:dark:bg-opacity-5 dark:shadow-slate-500 py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                    class="text-base text-dark py-2 mx-8 group-hover:text-primary dark:text-white flex"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                    class="text-base text-dark py-2 mx-8 group-hover:text-primary dark:text-white flex"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                    class="text-base text-dark py-2 mx-8 group-hover:text-primary dark:text-white flex"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                    class="text-base text-dark py-2 mx-8 group-hover:text-primary dark:text-white flex"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="text-base text-dark py-2 mx-8 group-hover:text-primary flex"
+                    class="text-base text-dark py-2 mx-8 group-hover:text-primary dark:text-white flex"
                     >Blog</a
                   >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 group-hover:text-primary dark:text-white flex"
+                    >Kontak</a
+                  >
+                </li>
+                <li class="flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 hidden text-sm text-slate-500"
+                      >Light</span
+                    >
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div
+                          class="togle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm hidden text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -81,27 +104,38 @@
     <!-- header end -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Halo Semua 👋🏻 , Saya
-              <span class="block font-semibold text-dark text-4xl lg:text-5xl"
+              <span
+                class="block font-semibold text-dark dark:text-white text-4xl lg:text-5xl"
                 >Dandi Agus Wijaya</span
               >
             </h1>
-            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
-              Software Engineer & <span class="text-dark">Web Developer</span>
+            <h2
+              class="font-medium text-secondary dark:text-gray-300 text-lg mb-5 lg:text-2xl">
+              Software Engineer &
+              <span class="text-dark dark:text-white">Web Developer</span>
             </h2>
-            <p class="font-medium text-secondary mb-10">
+            <p class="font-medium text-secondary dark:text-gray-300 mb-10">
               Saya Dandi Agus Wijaya, seorang Software Engineer dan Web
               Developer yang bersemangat dalam mengembangkan solusi digital
-              inovatif dan <span class="text-dark font-bold">efisien.</span>
+              inovatif dan efisien. Saya memulai karir saya sebagai frontend
+              engineer sejak 2021 dan memiliki pengalaman sebagai backend,
+              fullstack, dan project manager. Saat ini, saya bekerja di sebuah
+              perusahaan agency di Medan sebagai frontend developer, mengerjakan
+              proyek-proyek seperti Backoffice Lopectect (e-commerce), landing
+              page Win81Automotive, dan MotorChrckup asal
+              <span class="text-dark dark:text-white font-bold"
+                >Singapura.</span
+              >
             </p>
 
             <a
-              href=""
+              href="https://wa.me/6285175232251?text=saya%20tertarik%20dengan%20anda"
               class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >Hubungi Saya</a
             >
@@ -133,32 +167,44 @@
     <!-- Hero section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4 class="font-bold uppercase text-primary text-lg mb-3">
               Tentang Saya
             </h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+            <h2
+              class="font-bold text-dark dark:text-white text-3xl mb-5 max-w-md lg:text-4xl">
               Mari, Mengenal diri saya!
             </h2>
-            <p class="lg:text-lg font-medium text-base text-secondary max-w-xl">
-              Saya seorang web developer berpengalaman dengan keahlian di
-              Next.js, Node.js, Tailwind, AngularJS, dan React. Saya memiliki
-              komunikasi yang baik dan kemampuan bahasa Inggris pasif.
+            <p
+              class="lg:text-lg font-medium text-base dark:text-gray-300 text-secondary max-w-xl">
+              Saya juga seorang mahasiswa semester 8 yang sedang menyusun
+              skripsi berjudul "Monitoring Penyimpanan Beras Menggunakan Sensor
+              HX711 Berbasis Arduino" dengan menggunakan bahasa C. Dalam
+              pekerjaan sehari-hari, saya terbiasa menggunakan Next.js, Tailwind
+              CSS, NextUI, MUI, Git, dan GitHub. Sebelum bergabung dengan
+              perusahaan ini, saya adalah seorang freelancer yang berpengalaman
+              dengan React, Angular, CodeIgniter, dan Node.js.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">
+              class="font-semibold text-dark dark:text-white text-2xl mb-4 lg:text-3xl lg:pt-10">
               Mari Berteman
             </h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
-              Jika Anda tertarik untuk berdiskusi atau ingin mengetahui lebih
-              lanjut tentang proyek saya, jangan ragu untuk menghubungi saya
-              melalui platform berikut.
-              <span class="text-dark font-bold"
+            <p
+              class="font-medium text-base dark:text-gray-300 text-secondary mb-6 lg:text-lg">
+              Selain itu, saya juga memiliki pengalaman organisasi yang luas,
+              termasuk sebagai ketua kelas dari semester 1 hingga 6, dan aktif
+              dalam organisasi bela diri, OSIS, paskibra, dan pramuka.
+              Pengalaman ini telah membentuk karakter leadership saya dan
+              membantu saya dalam menghadapi berbagai tantangan dalam karir dan
+              akademis. Jika Anda tertarik untuk berdiskusi atau ingin
+              mengetahui lebih lanjut tentang proyek saya, jangan ragu untuk
+              menghubungi saya melalui platform berikut.
+              <span class="text-dark dark:text-white font-bold"
                 >Mari terhubung dan berbagi pengalaman!</span
               >
             </p>
@@ -167,7 +213,7 @@
               <a
                 href="https://youtube.com/d_a_wijaya"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:text-white hover:bg-red-600">
+                class="w-9 h-9 mr-3 rounded-full flex dark:text-white justify-center items-center border border-slate-300 hover:border-primary hover:text-white hover:bg-red-600">
                 <svg
                   width="20"
                   class="fill-current"
@@ -184,7 +230,7 @@
               <a
                 href="https://instagram.com/d_a_wijayaa"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:text-white hover:bg-orange-500">
+                class="w-9 h-9 mr-3 rounded-full flex dark:text-white justify-center items-center border border-slate-300 hover:border-primary hover:text-white hover:bg-orange-500">
                 <svg
                   width="20"
                   class="fill-current"
@@ -201,7 +247,7 @@
               <a
                 href="https://LinkedIn.com/d_a_wijayaa"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:text-white hover:bg-primary">
+                class="w-9 h-9 mr-3 rounded-full flex dark:text-white justify-center items-center border border-slate-300 hover:border-primary hover:text-white hover:bg-primary">
                 <svg
                   role="img"
                   width="20"
@@ -221,51 +267,75 @@
     <!-- About Section End -->
 
     <!-- portfolio start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 lg:text-5xl">
+            <h2
+              class="font-bold dark:text-white text-dark text-3xl mb-4 lg:text-5xl">
               Project Terbaru
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel unde
-              quos provident perferendis id deserunt placeat eius autem enim
-              magnam?
+            <p
+              class="font-medium text-md dark:text-gray-300 text-secondary md:text-lg">
+              Saya akan menampilkan deskripsi singkat dari proyek-proyek yang
+              telah saya kerjakan. Berdasarkan informasi sebelumnya, berikut
+              adalah beberapa deskripsi yang cocok untuk dua proyek terbaru
+              saya:
             </p>
           </div>
         </div>
         <div
           class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+          <div class="mb-12 p-4 md:w-1/2 relative">
+            <div class="rounded-md shadow-md lg:mb-0 mb-20 overflow-hidden">
               <img
                 src="src/img/lopectech/login-dekstop.webp"
                 alt="Back Office Lopectech"
                 width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <a
+              href="galery.html"
+              class="absolute lg:bottom-48 lg:right-10 bottom-[22rem] right-0 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+              Detail</a
+            >
+            <h3
+              class="font-semibold text-xl dark:text-white text-dark mt-5 mb-3">
               Back Office Lopectech
             </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              laborum.
+            <p class="font-medium text-base dark:text-gray-300 text-secondary">
+              Back Office Lopectech adalah sistem e-commerce yang dikembangkan
+              untuk membantu manajemen dan pengelolaan data penjualan serta
+              inventaris. Saya berperan sebagai frontend developer, menggunakan
+              Next.js dan Tailwind CSS untuk membangun antarmuka pengguna yang
+              responsif dan admin-friendly. Proyek ini membantu klien dalam
+              meningkatkan efisiensi operasional dan pengelolaan data secara
+              real-time.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
+          <div class="mb-12 p-4 md:w-1/2 relative">
+            <div class="rounded-md shadow-md lg:mb-0 mb-20 overflow-hidden">
               <img
                 src="src/img/winAutomotive/Beranda.png"
                 alt="Landing Page Win 81 Automotive"
                 width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <a
+              href="galery2.html"
+              class="absolute lg:bottom-48 lg:right-10 bottom-[22rem] right-0 text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+              Detail</a
+            >
+            <h3
+              class="font-semibold text-xl dark:text-white text-dark mt-5 mb-3">
               Landing Page Win 81 Automotive
             </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              laborum.
+            <p class="font-medium text-base dark:text-gray-300 text-secondary">
+              Landing Page Win 81 Automotive adalah halaman arahan yang
+              dirancang untuk mempromosikan spareparts mobil berkualitas dengan
+              garansi. Saya menggunakan Next.js dan Tailwind CSS untuk
+              menciptakan tampilan yang menarik dan SEO-friendly, memastikan
+              visibilitas yang lebih baik di mesin pencari. Proyek ini berhasil
+              meningkatkan lalu lintas website dan konversi penjualan klien.
             </p>
           </div>
         </div>
@@ -274,7 +344,7 @@
     <!-- portfolio end -->
 
     <!-- clients start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-800">
+    <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-600">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
@@ -282,9 +352,9 @@
             <h2 class="font-bold text-white text-4xl mb-4 md:text-5xl">
               Yang Pernah Bekerja Sama
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium explicabo veniam enim?
+            <p
+              class="font-medium text-md text-secondary dark:text-[#DDFCFE] md:text-lg">
+              Berikut adalah daftar client yang pernah saya layani
             </p>
           </div>
         </div>
@@ -297,7 +367,7 @@
               ><img src="src/img/lopetech.svg" alt="Lopectech"
             /></a>
             <a
-              href="https://win-automotive.vercel.app/"
+              href="https://winautomotive.id"
               class="lg:mx-6 xl:mx-8 max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100"
               ><img src="src/img/logo.webp" alt="Win81Automotive"
             /></a>
@@ -306,6 +376,11 @@
               class="lg:mx-6 xl:mx-8 max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100"
               ><img src="src/img/asset-logo.webp" alt="MotorCheckup"
             /></a>
+            <a
+              href="https://isunworld.com/"
+              class="lg:mx-6 xl:mx-8 max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100"
+              ><img src="src/img/logo.png" alt="Isun"
+            /></a>
           </div>
         </div>
       </div>
@@ -313,17 +388,18 @@
     <!-- clients end -->
 
     <!-- blog start -->
-    <section id="blog" class="pt-3 pb-32 bg-slate-100">
+    <section id="blog" class="pt-3 pb-32 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 lg:text-5xl">
+            <h2
+              class="font-bold text-dark dark:text-white text-3xl mb-4 lg:text-5xl">
               Tulisan Terkini
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi in
-              vitae magnam consequatur.
+            <p
+              class="font-medium text-md dark:text-gray-300 text-secondary md:text-lg">
+              Berikut saya lampirkan beberapa karya tulis saya
             </p>
           </div>
         </div>
@@ -332,23 +408,22 @@
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img
-                src="src/img/cara-belajar-pemrograman.jpeg"
+                src="src/img/blog/cara-belajar-pemrograman.png"
                 alt="Cara Belajar pemograman tips and trik"
                 class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a
-                    href="#"
+                    href="#blog"
                     class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
                     >Cara Belajar Pemrograman By Dandi Agus Wijaya</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam, obcaecati?
+                  Segera Hadir....
                 </p>
                 <a
-                  href="#"
+                  href="#blog"
                   class="font-medium text-sm text-white bg-primary rounded-lg hover:opacity-80 py-2 px-4"
                   >Baca Selengkapnya</a
                 >
@@ -358,23 +433,22 @@
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img
-                src="src/img/lopectech/login-dekstop.webp"
-                alt="Cara Belajar pemograman tips and trik"
+                src="src/img/blog/belajar bahasa inggris.png"
+                alt="Cara Belajar Bahasa Inggris tips and trik"
                 class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a
-                    href="#"
+                    href="#blog"
                     class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
-                    >Cara Belajar Pemrograman By Dandi Agus Wijaya</a
+                    >Cara Belajar Bahasa Inggris By Dandi Agus Wijaya</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam, obcaecati?
+                  Segera Hadir....
                 </p>
                 <a
-                  href="#"
+                  href="#blog"
                   class="font-medium text-sm text-white bg-primary rounded-lg hover:opacity-80 py-2 px-4"
                   >Baca Selengkapnya</a
                 >
@@ -384,23 +458,22 @@
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img
-                src="src/img/lopectech/login-dekstop.webp"
-                alt="Cara Belajar pemograman tips and trik"
+                src="src/img/blog/robot-sederhana.png"
+                alt="Cara membuat robot tips and trik"
                 class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a
-                    href="#"
+                    href="#blog"
                     class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
-                    >Cara Belajar Pemrograman By Dandi Agus Wijaya</a
+                    >Cara Membuat robot By Dandi Agus Wijaya</a
                   >
                 </h3>
                 <p class="font-medium text-base text-secondary mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam, obcaecati?
+                  Segera Hadir....
                 </p>
                 <a
-                  href="#"
+                  href="#blog"
                   class="font-medium text-sm text-white bg-primary rounded-lg hover:opacity-80 py-2 px-4"
                   >Baca Selengkapnya</a
                 >
@@ -413,21 +486,23 @@
     <!-- blog enbd -->
 
     <!-- contact start -->
-    <section id="contact" class="pt-36 pb-32">
+    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 lg:text-5xl">
-              Hubungi Kami
+            <h2
+              class="font-bold dark:text-white text-dark text-3xl mb-4 lg:text-5xl">
+              Hubungi Saya
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-              doloribus.
+            <p
+              class="font-medium text-md dark:text-gray-300 text-secondary md:text-lg">
+              Jika anda memiliki sesuatu untuk disampaikan kepada saya silahkan
+              isi form dibawah ini:
             </p>
           </div>
         </div>
-        <form action="">
+        <form id="contact-form">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
               <label for="name" class="text-base font-bold text-primary"
@@ -436,6 +511,7 @@
               <input
                 type="text"
                 id="name"
+                name="name"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
@@ -443,8 +519,9 @@
                 >Email</label
               >
               <input
-                type="text"
+                type="email"
                 id="email"
+                name="email"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
@@ -452,12 +529,13 @@
                 >Pesan</label
               >
               <textarea
-                type="text"
                 id="pesan"
+                name="message"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
             </div>
             <div class="w-full px-4">
               <button
+                type="submit"
                 class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
                 Kirim
               </button>
@@ -598,13 +676,25 @@
               class="text-primary font-bold"
               >Dandi agus wijaya</a
             >
-            menggunkan Tailwind CSS
+            menggunakan Tailwind CSS
           </p>
         </div>
       </div>
     </footer>
     <!-- footer end -->
 
+    <!-- back to top start -->
+    <a
+      href="#home"
+      class="h-14 w-14 fixed bottom-4 right-4 z-50 hidden items-center justify-center rounded-full p-4 hover:animate-pulse bg-primary"
+      id="to-top">
+      <span class="mt-3 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span
+    ></a>
+    <!-- back to top end -->
+
     <script src="src/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Gallery</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet" />
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow grid grid-cols-2">
+      <div class="container mx-auto py-6 px-4">
+        <h1 class="text-3xl font-bold text-gray-900">Portfolio Gallery</h1>
+      </div>
+      <div class="text-primary py-6 px-4 flex justify-end font-bold text-2xl">
+        Dandi Agus Wijaya
+      </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="container mx-auto py-8 px-4">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <!-- Example Image -->
+        <div class="relative">
+          <img
+            src="src/img/lopectech/dashboard.png"
+            alt="Portfolio Item"
+            class="w-full h-44 md:h-72 lg:h-96 object-cover rounded-lg shadow-md" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-lg font-semibold">Dashboard</span>
+          </div>
+        </div>
+        <!-- Repeat for other images -->
+        <div class="relative">
+          <img
+            src="src/img/lopectech/login-mobile.png"
+            alt="Portfolio Item"
+            class="w-full h-44 md:h-72 lg:h-96 object-cover rounded-lg shadow-md" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-lg font-semibold">Login Mobile</span>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="src/img/lopectech/daftar-produk.png"
+            alt="Portfolio Item"
+            class="w-full h-44 md:h-72 lg:h-96 object-cover rounded-lg shadow-md" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-lg font-semibold">Daftar Produk</span>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            src="src/img/lopectech/homepage.png"
+            alt="Portfolio Item"
+            class="w-full h-44 md:h-72 lg:h-96 object-cover rounded-lg shadow-md" />
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-lg font-semibold">Homepage</span>
+          </div>
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+  </body>
+</html>
